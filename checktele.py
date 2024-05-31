@@ -538,20 +538,18 @@ async def _(event):
                 try:
                     await Tepthon(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
-                    await event.client.send_file(event.chat_id, "https://t.me/vgyhjhh/2", caption=f'''
-⌯ Done caught ! 🐊
+                    await event.client.send_file(event.chat_id, "", caption=f'''
 ⤷ User : @{username} 
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
-⤷ By : ( @PP6ZZ )  
+⤷ By : ( @b_a_h 
     ''')
                     
-                    await event.client.send_file("@PP6ZZ", "https://t.me/vgyhjhh/2", caption=f'''
-⌯ Done caught ! 🐊
+                    await event.client.send_file("@b_a_h""", caption=f'''
 ⤷ User : @{username} 
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
-⤷ By : ( @PP6ZZ ) ''')
+⤷ By : (  @b_a_h ''')
                     
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -608,10 +606,7 @@ async def _(event):
                         await Tepthon(functions.channels.UpdateUsernameRequest(
                             channel=ch, username=username))
                         await event.client.send_message(event.chat_id, f'''
-ADNAN CHECKER
 User : @{username}        
-Channel / @r6r6rr
-@PP6ZZ
     ''')
                         break
                     except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -642,10 +637,7 @@ Channel / @r6r6rr
                 await Tepthon(functions.channels.UpdateUsernameRequest(
                     channel=ch, username=username))
                 await event.client.send_message(event.chat_id, f'''
-ADNAN CHECKER
-User : @{username}        
-Channel / @r6r6rr
-@PP6ZZ
+User : @{username}      
     ''')
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
                 await event.client.send_message(event.chat_id, f"مبند `{username}` ❌❌")
@@ -654,7 +646,7 @@ Channel / @r6r6rr
     الخطأ :
     {str(eee)}''')
 Threads=[] 
-for t in range(100):
+for t in range(20):
     x = threading.Thread(target=_)
     le = threading.Thread(target=gen_user)
     x.start()
